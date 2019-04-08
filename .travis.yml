@@ -6,6 +6,7 @@ install:
 script: py.test --cov=tests
 deploy:
   provider: openshift
+  script:  rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
   user: Lwando92
   password:
     secure: W/hLt8NT6yoatctqnGhlGpI9ZTdiMOqA8n339qTjWEf6vk4QFmNUCoAXq/zRfN6pO6FHCBtNRtYBXNAek0PCUrDaEOntPJyHTcnuWCPHsSRE/scTWELZWhWsi8+tKgRG/kFuNZhTdf17NB+OYx4N6wqjvK5TlJBWyDKHbJJLi59S63Wm8jmfxVIuT3ifm09lNnUsy2mJ/5QP9DueLCv01IXeyTLLJnU6qFKOl01EXU13dSlzufy4JCO3hVG5T8OEXy2cd/SWqr8PlE1DaWCm3BTMnfTvJge+QRdD7hdTfTP1sujzu1qiF1djahGc9SXeWx5OJC019uAXQs86B+ZiLKHaivyJi/NY3lAmt9tawyRsBJ3xuuY8Hg4Dol4P7nVSUhSNab0tLVKAA7fsxTAzdNju1O9MIcYKMEB4M5Ymj7gfbOTNv4Y+K0VS2lX8PihmuEnfkAadzZopIAiAzeJ1iCXZY/G/rQ+HVovWigFTxL04yfAVzGi7JXllUIOv0was0Y3FkWwTP30L1mt5WvxehovxZouL6NWHmpcnOMz+WT0KVv40lJ8lM1WKbxADVFyRR0TaWKrx1NqSSYCBSj1MSUzJ7jnL0ZciArxdORdiW9OTm2+AOYOq8tNBPYVkL2VQWDvEdHMntNCREHH4qOrHqyDMBQsuR1OG0FWRzW8IBQQ=
