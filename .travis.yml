@@ -10,5 +10,5 @@ deploy:
   password: L!kh@ny312
   app: flaskapplication
   domain: https://192.168.99.100:8443/console
-  on: auth
+  on: master
   repo: nonzulu/FlaskApplication
