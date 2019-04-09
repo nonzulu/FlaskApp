@@ -45,12 +45,10 @@ sys.path.insert(0, myPath + '/src/flaskbasic')
 def mock_data():
     return Mock(spec=Student)
 
-
 # test student name and id
 def test_student_name(mock_data):
 
     data = Mock(return_value = mock_data)
-
     assert data.readName('Lwando',1)
     assert data.readName('Zukisa',2)
     assert data.readName('ludwe',3)
