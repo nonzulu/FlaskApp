@@ -4,12 +4,12 @@ python:
 install:
 - pipenv install
 script: py.test --cov=tests
-# deploy:
-#   provider: openshift
-#   user: Lwando92
-#   password:
-#     secure: W/hLt8NT6yoatctqnGhlGpI9ZTdiMOqA8n339qTjWEf6vk4QFmNUCoAXq/zRfN6pO6FHCBtNRtYBXNAek0PCUrDaEOntPJyHTcnuWCPHsSRE/scTWELZWhWsi8+tKgRG/kFuNZhTdf17NB+OYx4N6wqjvK5TlJBWyDKHbJJLi59S63Wm8jmfxVIuT3ifm09lNnUsy2mJ/5QP9DueLCv01IXeyTLLJnU6qFKOl01EXU13dSlzufy4JCO3hVG5T8OEXy2cd/SWqr8PlE1DaWCm3BTMnfTvJge+QRdD7hdTfTP1sujzu1qiF1djahGc9SXeWx5OJC019uAXQs86B+ZiLKHaivyJi/NY3lAmt9tawyRsBJ3xuuY8Hg4Dol4P7nVSUhSNab0tLVKAA7fsxTAzdNju1O9MIcYKMEB4M5Ymj7gfbOTNv4Y+K0VS2lX8PihmuEnfkAadzZopIAiAzeJ1iCXZY/G/rQ+HVovWigFTxL04yfAVzGi7JXllUIOv0was0Y3FkWwTP30L1mt5WvxehovxZouL6NWHmpcnOMz+WT0KVv40lJ8lM1WKbxADVFyRR0TaWKrx1NqSSYCBSj1MSUzJ7jnL0ZciArxdORdiW9OTm2+AOYOq8tNBPYVkL2VQWDvEdHMntNCREHH4qOrHqyDMBQsuR1OG0FWRzW8IBQQ=
-#   app: FlaskApp
-#   domain: flaskapplication
-#   on:
-#     repo: nonzulu/FlaskApp
+deploy:
+  provider: openshift
+  user: Lwando92
+  password:
+    secure: qAvClDZm388sBdhB+2cQ+4OEySU+Fiw/TWYmUqukEufiR/bNTjh2ik93fokOuHChNkGufCN1DdjhmjoTzPf4S1xX5qlKNsL8QInPM8JJ8rs0RbMGeOkZzh10wmGcs18DIky3dxrgE52AcudlVGqb0vtYmfCF+KpRzlC3m1GvCg0r9dsxbTsx2T4jAhCef5+0SrCVeKdpkfW/TpwH3/OWfKcCWbgWD8W+Mt6s/1yZvi7ZxiGfhAGITyTTteyieLD2IxHOohLM4PaZ1VIyRpJIH2Cin9JitepSpgWeLAvHA1gSy2rQ6WPWxv22sGChjmMlWJFLWE4os+WJ1UaOzyLMgWyaG6DnED/aZMI8D7wEY8l6BL1hx0E+nzjNavnCUCsnoCPDALWtc8UTwHVuKYZqaOdW9gWWJwezlSiVXtCCszfFijFHewZ/fQI86h6W2mhiRTfs/+yd3aaYRClOCOIcqF0Ww8Edud34kY+Bgszfcctf9Nds/H1bIwW7pah9BYHLMga11IsV8Oqwcdtr2RsrWNN3PZpS6LJdBtsEE9mBvGCUIvv94+nR/onpxrkduBQfTKBo/RifCdVArP4qo5kJmugWdcTsAVrC0rb90eMhSFIyQS17t7f8xurETxS9+4mHLWee9uiYj/KdlCVa2MsyJB4DxNa8hFt7VbJxqIdd5QE=
+  app: FlaskApp
+  domain: flaskapplication
+  on:
+    repo: nonzulu/FlaskApp
