@@ -1,0 +1,1 @@
+web: bundle exec sqlite server -p $PORT
